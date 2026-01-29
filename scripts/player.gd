@@ -29,6 +29,7 @@ enum PLAYER_STATE{
 var state:PLAYER_STATE = PLAYER_STATE.IDLING
 
 func _input(event: InputEvent) -> void:
+	if !is_multiplayer_authority(): return
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * sens)
 		camera.rotate_x(-event.relative.y * sens)
@@ -51,10 +52,12 @@ func _handle_animations() -> void:
 			pm_player.current_animation = "Idle"
 		_:
 			pm_player.current_animation = "Idle"
-	
+
+func _rotate_playermodel() -> void:
 	playermodel.rotation.y = lerp_angle(playermodel.rotation.y, head.rotation.y, PLAYERMODEL_TURN_SPEED)
-	
+
 func _enter_tree() -> void:
+	set_multiplayer_authority(int(name))
 	if is_multiplayer_authority():
 		playermodel.get_node("Head").hide()
 		playermodel.get_node("HeadAttachment/LeftEye").hide()
@@ -63,10 +66,16 @@ func _enter_tree() -> void:
 		get_node("Username").hide()
 
 func _ready() -> void:
+	if !is_multiplayer_authority(): return
+	camera.current = true
 	head_rest_position = head.position
 	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta: float) -> void:
+
+	_rotate_playermodel()
+
+	if !is_multiplayer_authority(): return
 	time += delta
 	
 	if not is_on_floor():

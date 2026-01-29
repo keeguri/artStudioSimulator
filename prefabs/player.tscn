@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=4 uid="uid://bcd1372qflfjy"]
+[gd_scene load_steps=22 format=4 uid="uid://bcd1372qflfjy"]
 
 [ext_resource type="Script" uid="uid://bhwopq4ar77s3" path="res://scripts/player.gd" id="1_72ieh"]
 [ext_resource type="PackedScene" uid="uid://d4hh20yeb1tfj" path="res://prefabs/step_particles.tscn" id="2_4dohe"]
@@ -519,6 +519,17 @@ _data = {
 &"Walk": SubResource("Animation_k6d57")
 }
 
+[sub_resource type="SceneReplicationConfig" id="SceneReplicationConfig_r66lb"]
+properties/0/path = NodePath(".:position")
+properties/0/spawn = true
+properties/0/replication_mode = 1
+properties/1/path = NodePath("Head:rotation:y")
+properties/1/spawn = true
+properties/1/replication_mode = 1
+properties/2/path = NodePath("Playermodel/AnimationPlayer:current_animation")
+properties/2/spawn = true
+properties/2/replication_mode = 1
+
 [node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("head", "camera", "playermodel", "pm_player")]
 collision_layer = 2
 script = ExtResource("1_72ieh")
@@ -740,3 +751,6 @@ playback_default_blend_time = 0.1
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 billboard = 1
 text = "bebe"
+
+[node name="MultiplayerSynchronizer" type="MultiplayerSynchronizer" parent="."]
+replication_config = SubResource("SceneReplicationConfig_r66lb")

@@ -40,10 +40,19 @@ offset_bottom = 173.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Play" type="Button" parent="UI/Control/VBoxContainer"]
+[node name="Playbuttons" type="HBoxContainer" parent="UI/Control/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Host" type="Button" parent="UI/Control/VBoxContainer/Playbuttons"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Play"
+text = "Host"
+
+[node name="Play" type="Button" parent="UI/Control/VBoxContainer/Playbuttons"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Join"
 
 [node name="Settings" type="Button" parent="UI/Control/VBoxContainer"]
 layout_mode = 2
@@ -111,4 +120,5 @@ light_energy = 2.0
 spot_range = 19.958
 spot_angle = 92.37
 
-[connection signal="pressed" from="UI/Control/VBoxContainer/Play" to="UI" method="_on_play_pressed"]
+[connection signal="pressed" from="UI/Control/VBoxContainer/Playbuttons/Host" to="UI" method="_on_host_pressed"]
+[connection signal="pressed" from="UI/Control/VBoxContainer/Playbuttons/Play" to="UI" method="_on_play_pressed"]
