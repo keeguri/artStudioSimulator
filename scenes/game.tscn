@@ -1,0 +1,162 @@
+[gd_scene load_steps=9 format=3 uid="uid://b0rykhd3kkvp1"]
+
+[ext_resource type="Material" uid="uid://c52hdqmcqxryn" path="res://materials/wood_planks.tres" id="1_lnu2h"]
+[ext_resource type="PackedScene" uid="uid://bcd1372qflfjy" path="res://prefabs/player.tscn" id="1_uwrxv"]
+[ext_resource type="Material" uid="uid://cjwareih5sctj" path="res://materials/concrete.tres" id="2_iywne"]
+[ext_resource type="Material" uid="uid://d0qkbwyhy8wcx" path="res://materials/wallpaper.tres" id="2_lbhrr"]
+[ext_resource type="Texture2D" uid="uid://c1futiuwfn4e5" path="res://images/cursors/dot_large.png" id="2_yqjtg"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uwrxv"]
+sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+ground_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
+
+[sub_resource type="Sky" id="Sky_yqjtg"]
+sky_material = SubResource("ProceduralSkyMaterial_uwrxv")
+
+[sub_resource type="Environment" id="Environment_lnu2h"]
+background_mode = 2
+sky = SubResource("Sky_yqjtg")
+tonemap_mode = 2
+tonemap_white = 0.3
+ssao_enabled = true
+glow_enabled = true
+
+[node name="Game" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_lnu2h")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.6880016, -0.04032682, 0.72458786, 0.5259789, 0.6602074, 0.5361646, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+shadow_enabled = true
+
+[node name="Map" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Map"]
+material_override = ExtResource("1_lnu2h")
+use_collision = true
+size = Vector3(20, 0.1, 30)
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.601064, 0)
+material_override = ExtResource("2_iywne")
+use_collision = true
+size = Vector3(20, 0.1, 30)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.829224, 3.053714, 0)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.34155273, 8.103595, 30)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 5.369753, 0)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 3.471922, 19.235)
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, -0.061885595, 0)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 1.8728008, 19.235)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, -9.006304)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, -6.0063043)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, -3.0063043)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, -0.006304264)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, 2.9936957)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, 5.9936957)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 2.2597547, 8.993696)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 2.9068296, 0.93390656)
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 3.053714, -13.813398)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 8.104, 8.677891)
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="Map"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.863504, 3.053714, 12.924251)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.342, 8.104, 7.022745)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.4458108, 3.053714, 15.063788)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.34155273, 8.103595, 25.074097)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="Map"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2.4666858, 3.053714, -15.131274)
+material_override = ExtResource("2_lbhrr")
+use_collision = true
+size = Vector3(0.34155273, 8.103595, 25.032349)
+
+[node name="Spawnpath" type="Node3D" parent="."]
+
+[node name="Player" parent="Spawnpath" instance=ExtResource("1_uwrxv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.476307, 1.05, 0)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="UI"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Cursor" type="TextureRect" parent="UI/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -15.0
+offset_top = -15.0
+offset_right = 15.0
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_yqjtg")
+expand_mode = 3
+
+[node name="Node" type="Node" parent="."]

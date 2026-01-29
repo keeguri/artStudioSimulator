@@ -1,0 +1,114 @@
+[gd_scene load_steps=7 format=3 uid="uid://bmoeb0n3xteoe"]
+
+[ext_resource type="Script" uid="uid://6ukswl736tfe" path="res://scripts/menu_ui.gd" id="1_vjb58"]
+[ext_resource type="PackedScene" uid="uid://b0rykhd3kkvp1" path="res://scenes/game.tscn" id="2_con2f"]
+[ext_resource type="Texture2D" uid="uid://blsno535q7bly" path="res://images/logo.png" id="3_4ytvr"]
+[ext_resource type="Material" uid="uid://c52hdqmcqxryn" path="res://materials/wood_planks.tres" id="3_con2f"]
+[ext_resource type="Material" uid="uid://1jsa3lky7yey" path="res://materials/wallpaper_red.tres" id="4_mhnvy"]
+
+[sub_resource type="Environment" id="Environment_mhnvy"]
+glow_enabled = true
+
+[node name="Menu" type="Node3D"]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_mhnvy")
+
+[node name="UI" type="CanvasLayer" parent="."]
+script = ExtResource("1_vjb58")
+game_scene = ExtResource("2_con2f")
+
+[node name="Control" type="Control" parent="UI"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -131.0
+offset_top = 18.0
+offset_right = 131.0
+offset_bottom = 173.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Play" type="Button" parent="UI/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Play"
+
+[node name="Settings" type="Button" parent="UI/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Settings"
+
+[node name="Customize" type="Button" parent="UI/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Customize"
+
+[node name="Quit" type="Button" parent="UI/Control/VBoxContainer"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Quit"
+
+[node name="Logo" type="TextureRect" parent="UI/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -248.26547
+offset_top = -218.0
+offset_right = 248.2655
+offset_bottom = -52.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_4ytvr")
+expand_mode = 1
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+material_override = ExtResource("3_con2f")
+size = Vector3(50, 0.1, 50)
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.120679, 0)
+material_override = ExtResource("3_con2f")
+size = Vector3(50, 0.1, 50)
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.044336, -14.874756)
+material_override = ExtResource("4_mhnvy")
+size = Vector3(50, 8.188672, 20.250488)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.245831, 4.044336, 1.6080933)
+material_override = ExtResource("4_mhnvy")
+size = Vector3(5.385254, 8.188672, 19.33313)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.036732, 4.044336, 1.6080933)
+material_override = ExtResource("4_mhnvy")
+size = Vector3(5.385254, 8.188672, 19.33313)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.99325186, 0.11597735, 0, -0.11597735, 0.99325186, 0, 2.240663, 4.18985)
+fov = 60.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 3.468576, 0)
+light_color = Color(0.9228156, 0.7287051, 0.3783166, 1)
+light_energy = 2.0
+spot_range = 19.958
+spot_angle = 92.37
+
+[connection signal="pressed" from="UI/Control/VBoxContainer/Play" to="UI" method="_on_play_pressed"]

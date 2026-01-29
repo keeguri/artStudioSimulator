@@ -1,0 +1,33 @@
+[gd_scene load_steps=6 format=3 uid="uid://d4hh20yeb1tfj"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_72ieh"]
+diffuse_mode = 3
+
+[sub_resource type="Curve" id="Curve_72ieh"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.35483867, 0.9325843), 0.0, 0.0, 0, 0, Vector2(0.6532258, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_4dohe"]
+curve = SubResource("Curve_72ieh")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_r66lb"]
+spread = 180.0
+initial_velocity_min = 7.0
+initial_velocity_max = 7.0
+gravity = Vector3(0, 0, 0)
+damping_min = 50.000004
+damping_max = 100.00001
+scale_min = 0.099999994
+scale_max = 0.29999998
+scale_curve = SubResource("CurveTexture_4dohe")
+
+[sub_resource type="SphereMesh" id="SphereMesh_1txc5"]
+
+[node name="StepParticles" type="GPUParticles3D"]
+material_override = SubResource("StandardMaterial3D_72ieh")
+emitting = false
+one_shot = true
+explosiveness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_r66lb")
+draw_pass_1 = SubResource("SphereMesh_1txc5")

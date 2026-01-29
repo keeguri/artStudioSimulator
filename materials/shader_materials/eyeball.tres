@@ -1,0 +1,14 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://bqc8ydj3upgw0"]
+
+[ext_resource type="Shader" uid="uid://de0ieq2kguluo" path="res://shaders/eyeball.gdshader" id="1_tc655"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_tc655")
+shader_parameter/eyelid_color = Color(0.61339027, 0.61339027, 0.61339027, 1)
+shader_parameter/eye_color = Color(1, 1, 1, 1)
+shader_parameter/pupil_color = Color(0, 0, 0, 1)
+shader_parameter/pupil_size = -0.4
+shader_parameter/blink_frequency = 0.4
+shader_parameter/blink_softener = 0.2
+shader_parameter/resting_position = 0.4530000215175
