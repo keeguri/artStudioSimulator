@@ -5,10 +5,12 @@ const EYEBALL_SHADER = "res://shaders/eyeball.gdshader"
 @export var STEP_PARTICLES : PackedScene
 
 @export var SPEED : float = 4.0
-var sens = 0.0035
-@export var ACELL_SPEED = 1
-@export var DECELL_SPEED = 1
-@export var AIR_CONTROL = 1
+var sens = SettingsManager.MOUSE_SENSITIVITY
+@export var ACELL_SPEED:float = 1
+@export var DECELL_SPEED:float = 1
+@export var AIR_CONTROL:float = 1
+@export var DRAG_STRENGTH:float = 1
+@export var DRAG_DAMPING:float = 1
 @export var PLAYERMODEL_TURN_SPEED = 0.5
 
 @export var footstep_spawn_offset:Vector3
@@ -17,10 +19,13 @@ var time = 0
 
 @export var head: Node3D
 @export var camera:Camera3D
+@export var interact_ray :RayCast3D
+@export var drag_target :Marker3D
 @export var playermodel: Skeleton3D
 @export var pm_player: AnimationPlayer
 
 var head_rest_position:Vector3
+var holding_object:RigidBody3D
 
 enum PLAYER_STATE{
 	IDLING,
@@ -29,6 +34,33 @@ enum PLAYER_STATE{
 }
 
 var state:PLAYER_STATE = PLAYER_STATE.IDLING
+
+@rpc("any_peer", "call_local")
+func _set_object_drag_owner(object_path:NodePath, new_owner:String) -> void:
+	var object :RigidBody3D = get_tree().current_scene.get_node(object_path)
+	object.set_meta("owner", new_owner)
+
+func _handle_actions() -> void:
+	if Input.is_action_just_pressed("pickup") and interact_ray.is_colliding():
+		var object :RigidBody3D = interact_ray.get_collider()
+		var objectMeta :String = object.get_meta("owner", "")
+		if objectMeta != "" and objectMeta != name: return
+		holding_object = object
+		var h_object_path:NodePath = get_tree().current_scene.get_path_to(holding_object)
+		_set_object_drag_owner.rpc(h_object_path, name)
+	if Input.is_action_just_released("pickup") and holding_object != null:
+		var h_object_path:NodePath = get_tree().current_scene.get_path_to(holding_object)
+		_set_object_drag_owner.rpc(h_object_path, "")
+		holding_object = null
+
+@rpc("any_peer", "call_local")
+func _handle_object_drag(object_path:NodePath, markerPosition:Vector3) -> void:
+	var object :RigidBody3D = get_tree().current_scene.get_node(object_path)
+	if object != null:
+		var difference:Vector3 = (markerPosition - object.global_position)
+		var force:Vector3 = difference.normalized() * difference.length() * DRAG_STRENGTH
+		var damping_force:Vector3 = -object.linear_velocity * DRAG_DAMPING
+		object.apply_central_force(force+damping_force)
 
 func _input(event: InputEvent) -> void:
 	if !is_multiplayer_authority(): return
@@ -72,6 +104,7 @@ func _ready() -> void:
 		camera.current = true
 		head_rest_position = head.position
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+		global_position = Vector3(0,1.05,0)
 	else:
 		return
 
@@ -82,6 +115,10 @@ func _physics_process(delta: float) -> void:
 	if !is_multiplayer_authority(): return
 	time += delta
 	
+	_handle_actions()
+	if holding_object != null:
+		_handle_object_drag.rpc(get_tree().current_scene.get_path_to(holding_object), drag_target.global_position)
+
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	

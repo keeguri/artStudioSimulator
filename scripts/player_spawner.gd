@@ -3,6 +3,7 @@ extends Node
 @export var PLAYER_SCENE :PackedScene
 
 var spawn_path :Node3D
+var game_manager :Node
 
 func _ready() -> void:
 	multiplayer.peer_connected.connect(_peer_connected)
@@ -17,9 +18,11 @@ func _peer_connected(id:int):
 	var player_node :CharacterBody3D = PLAYER_SCENE.instantiate()
 	player_node.name = str(id)
 	spawn_path.add_child(player_node)
-	player_node.global_position = Vector3(0,1.05,0)
 	_apply_color()
 
 func _peer_disconnected(id:int):
 	var player_node :CharacterBody3D = spawn_path.get_node(str(id))
 	player_node.queue_free()
+	for rigidbody in get_tree().current_scene.get_children():
+		if rigidbody.get_meta("owner", "-1") == str(id):
+			game_manager.clear_item_ownership.rpc(get_tree().current_scene.get_path_to(rigidbody))
