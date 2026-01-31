@@ -25,6 +25,7 @@ glow_enabled = true
 [node name="Game" type="Node3D"]
 
 [node name="GameManager" type="Node" parent="." node_paths=PackedStringArray("spawn_path")]
+unique_name_in_owner = true
 script = ExtResource("6_p57ef")
 PLAYER_SPAWNER = ExtResource("2_u5sy4")
 spawn_path = NodePath("../Spawnpath")

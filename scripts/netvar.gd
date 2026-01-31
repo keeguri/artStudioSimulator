@@ -10,7 +10,7 @@ var is_host : bool = false
 
 var username :String = ""
 var body_color :Color = Color(1,1,1)
-var accessory_color :Color = Color.DARK_RED
+var accessory_color :Color = Color(1,1,1)
 
 func _ready():
 	var args = OS.get_cmdline_user_args()

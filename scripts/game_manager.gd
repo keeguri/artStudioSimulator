@@ -7,4 +7,4 @@ func _ready() -> void:
 	if Netvar.is_host:
 		var instantiated_ps = PLAYER_SPAWNER.instantiate()
 		instantiated_ps.spawn_path = spawn_path
-		spawn_path.call_deferred(&"add_child", instantiated_ps)
+		get_parent().call_deferred(&"add_child", instantiated_ps)
