@@ -20,9 +20,12 @@ var time = 0
 @export var head: Node3D
 @export var camera:Camera3D
 @export var interact_ray :RayCast3D
+@export var edit_ray :RayCast3D
 @export var drag_target :Marker3D
 @export var playermodel: Skeleton3D
 @export var pm_player: AnimationPlayer
+
+var accept_input:bool = true
 
 var head_rest_position:Vector3
 var holding_object:RigidBody3D
@@ -35,23 +38,30 @@ enum PLAYER_STATE{
 
 var state:PLAYER_STATE = PLAYER_STATE.IDLING
 
+func toggle_cursor(value:bool) -> void:
+	get_tree().current_scene.get_node("UI/Control/Cursor").visible = value
+
 @rpc("any_peer", "call_local")
 func _set_object_drag_owner(object_path:NodePath, new_owner:String) -> void:
 	var object :RigidBody3D = get_tree().current_scene.get_node(object_path)
 	object.set_meta("owner", new_owner)
 
 func _handle_actions() -> void:
-	if Input.is_action_just_pressed("pickup") and interact_ray.is_colliding():
+	if Input.is_action_just_pressed("pickup") and interact_ray.is_colliding() and accept_input:
 		var object :RigidBody3D = interact_ray.get_collider()
 		var objectMeta :String = object.get_meta("owner", "")
 		if objectMeta != "" and objectMeta != name: return
 		holding_object = object
 		var h_object_path:NodePath = get_tree().current_scene.get_path_to(holding_object)
 		_set_object_drag_owner.rpc(h_object_path, name)
-	if Input.is_action_just_released("pickup") and holding_object != null:
+	if Input.is_action_just_released("pickup") and holding_object != null and accept_input:
 		var h_object_path:NodePath = get_tree().current_scene.get_path_to(holding_object)
 		_set_object_drag_owner.rpc(h_object_path, "")
 		holding_object = null
+	if Input.is_action_just_pressed("interact") and edit_ray.is_colliding() and holding_object == null and accept_input:
+		var collider = edit_ray.get_collider()
+		if collider.name == "Pedistal":
+			collider.enter_edit_mode(self)
 
 @rpc("any_peer", "call_local")
 func _handle_object_drag(object_path:NodePath, markerPosition:Vector3) -> void:
@@ -63,7 +73,7 @@ func _handle_object_drag(object_path:NodePath, markerPosition:Vector3) -> void:
 		object.apply_central_force(force+damping_force)
 
 func _input(event: InputEvent) -> void:
-	if !is_multiplayer_authority(): return
+	if !is_multiplayer_authority() or !accept_input: return
 	if event is InputEventMouseMotion:
 		head.rotate_y(-event.relative.x * sens)
 		camera.rotate_x(-event.relative.y * sens)
@@ -127,7 +137,7 @@ func _physics_process(delta: float) -> void:
 	
 	var input_dir := Input.get_vector("a", "d", "w", "s")
 	var direction := (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
-	if direction:
+	if direction and accept_input:
 		if is_on_floor():
 			state = PLAYER_STATE.WALKING
 			velocity.x = lerp(velocity.x, direction.x * SPEED, ACELL_SPEED)

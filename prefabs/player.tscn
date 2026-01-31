@@ -528,8 +528,9 @@ properties/2/path = NodePath("Playermodel/AnimationPlayer:current_animation")
 properties/2/spawn = true
 properties/2/replication_mode = 1
 
-[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("head", "camera", "interact_ray", "drag_target", "playermodel", "pm_player")]
-collision_layer = 2
+[node name="Player" type="CharacterBody3D" node_paths=PackedStringArray("head", "camera", "interact_ray", "edit_ray", "drag_target", "playermodel", "pm_player")]
+collision_layer = 10
+collision_mask = 9
 script = ExtResource("1_72ieh")
 STEP_PARTICLES = ExtResource("2_4dohe")
 SPEED = 6.0
@@ -539,6 +540,7 @@ footstep_spawn_offset = Vector3(0, -0.8, 0)
 head = NodePath("Head")
 camera = NodePath("Head/Camera")
 interact_ray = NodePath("Head/Camera/InteractionRay")
+edit_ray = NodePath("Head/Camera/EditRay")
 drag_target = NodePath("Head/Camera/DragTarget")
 playermodel = NodePath("Playermodel/Armature/Skeleton3D")
 pm_player = NodePath("Playermodel/AnimationPlayer")
@@ -557,9 +559,14 @@ fov = 90.0
 [node name="InteractionRay" type="RayCast3D" parent="Head/Camera"]
 target_position = Vector3(0, 0, -1.5)
 collision_mask = 4
+collide_with_areas = true
 
 [node name="DragTarget" type="Marker3D" parent="Head/Camera"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.93848735)
+
+[node name="EditRay" type="RayCast3D" parent="Head/Camera"]
+target_position = Vector3(0, 0, -1.5)
+collision_mask = 8
 
 [node name="Playermodel" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.28186363, 0)

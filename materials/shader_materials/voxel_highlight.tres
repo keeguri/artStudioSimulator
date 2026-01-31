@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://qcmopvy3r83t"]
+
+[ext_resource type="Shader" uid="uid://b87oiclfre5bk" path="res://shaders/highlight.gdshader" id="1_pfnhl"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_pfnhl")
+shader_parameter/highlight_color = Color(0.7666445, 0.9999998, 0.99734086, 1)
+shader_parameter/blink_speed = 10.0

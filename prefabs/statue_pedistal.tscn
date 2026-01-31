@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=4 uid="uid://bueebnjn24swc"]
+[gd_scene load_steps=8 format=4 uid="uid://bueebnjn24swc"]
 
 [ext_resource type="Script" uid="uid://ccv2cpxknnnyc" path="res://scripts/statue_pedistal.gd" id="1_53lsb"]
+[ext_resource type="Material" uid="uid://bo6kknnyhripx" path="res://materials/voxel_material.tres" id="2_fll3l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3afc"]
 size = Vector3(1, 2, 1)
@@ -46,10 +47,23 @@ shadow_mesh = SubResource("ArrayMesh_2oker")
 [sub_resource type="BoxShape3D" id="BoxShape3D_53lsb"]
 size = Vector3(1.9572754, 4.069092, 2)
 
-[node name="Pedistal" type="StaticBody3D"]
+[node name="Pedistal" type="StaticBody3D" node_paths=PackedStringArray("boxArea", "voxelHolder", "editModeCamera", "cameraHolder", "cameraRotator")]
+collision_layer = 8
+collision_mask = 8
 script = ExtResource("1_53lsb")
+speed = 2.0
+boxArea = NodePath("BoxDetection")
+voxelHolder = NodePath("VoxelHolder")
+editModeCamera = NodePath("CameraHolder/CameraRotator/Camera")
+cameraHolder = NodePath("CameraHolder")
+cameraRotator = NodePath("CameraHolder/CameraRotator")
+voxelMaterial = ExtResource("2_fll3l")
 
 [node name="BoxDetection" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 4
+input_ray_pickable = false
+monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BoxDetection"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7988281, 0)
@@ -62,3 +76,15 @@ skeleton = NodePath("")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9627686, 0)
 shape = SubResource("BoxShape3D_53lsb")
+
+[node name="VoxelHolder" type="Node3D" parent="."]
+
+[node name="CameraHolder" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.1459095, 0)
+
+[node name="CameraRotator" type="Node3D" parent="CameraHolder"]
+transform = Transform3D(1, 0, 0, 0, 0.9946508, 0.10329601, 0, -0.10329601, 0.9946508, 0, 0, 0)
+
+[node name="Camera" type="Camera3D" parent="CameraHolder/CameraRotator"]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0.23712254, 2.173488)
+fov = 60.0
