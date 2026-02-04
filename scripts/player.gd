@@ -40,6 +40,10 @@ var state:PLAYER_STATE = PLAYER_STATE.IDLING
 
 func toggle_cursor(value:bool) -> void:
 	get_tree().current_scene.get_node("UI/Control/Cursor").visible = value
+	if value == true:
+		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+	else:
+		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
 
 @rpc("any_peer", "call_local")
 func _set_object_drag_owner(object_path:NodePath, new_owner:String) -> void:
@@ -60,7 +64,7 @@ func _handle_actions() -> void:
 		holding_object = null
 	if Input.is_action_just_pressed("interact") and edit_ray.is_colliding() and holding_object == null and accept_input:
 		var collider = edit_ray.get_collider()
-		if collider.name == "Pedistal":
+		if collider.collision_layer == 8:
 			collider.enter_edit_mode(self)
 
 @rpc("any_peer", "call_local")

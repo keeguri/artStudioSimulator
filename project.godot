@@ -20,6 +20,10 @@ config/icon="uid://n6x8t7otnfu2"
 Netvar="*res://scripts/netvar.gd"
 SettingsManager="*res://scripts/settings_manager.gd"
 
+[debug_draw_3d]
+
+settings/addon_root_folder="res://addons/debug_draw_3d"
+
 [input]
 
 w={
@@ -89,6 +93,7 @@ e={
 3d_physics/layer_2="Players"
 3d_physics/layer_3="Items"
 3d_physics/layer_4="OnlyPlayers"
+3d_physics/layer_5="Voxels"
 
 [physics]
 

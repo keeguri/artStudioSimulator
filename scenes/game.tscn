@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://b0rykhd3kkvp1"]
+[gd_scene load_steps=14 format=3 uid="uid://b0rykhd3kkvp1"]
 
 [ext_resource type="Material" uid="uid://cjwareih5sctj" path="res://materials/concrete.tres" id="2_iywne"]
 [ext_resource type="PackedScene" uid="uid://c24fkaui2dp5y" path="res://prefabs/player_spawner.tscn" id="2_u5sy4"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://hp2pvq22uknx" path="res://scripts/game_manager.gd" id="6_p57ef"]
 [ext_resource type="PackedScene" uid="uid://bueebnjn24swc" path="res://prefabs/statue_pedistal.tscn" id="7_gee14"]
 [ext_resource type="PackedScene" uid="uid://b7magvm4maa1c" path="res://prefabs/box.tscn" id="7_u5sy4"]
+[ext_resource type="PackedScene" uid="uid://dnqqpaog1fkp1" path="res://prefabs/statue_activator.tscn" id="8_gee14"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_uwrxv"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -154,7 +155,8 @@ _spawnable_scenes = PackedStringArray("uid://bcd1372qflfjy")
 spawn_path = NodePath("../Spawnpath")
 
 [node name="TestItem" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6803798, -4.858501)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.733424, -4.858501)
+visible = false
 collision_layer = 4
 collision_mask = 3
 metadata/statue_dimensions = Vector3(5, 10, 5)
@@ -169,4 +171,42 @@ shape = SubResource("ConvexPolygonShape3D_u5sy4")
 transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 1.768981, 0.4033934, -13.828001)
 
 [node name="Pedistal" parent="." instance=ExtResource("7_gee14")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.725604, 0.05000019, -3.3526783)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.787696, 0.05000019, -8.039127)
+
+[node name="Pedistal2" parent="." instance=ExtResource("7_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.787696, 0.05000019, -0.039127827)
+
+[node name="Pedistal3" parent="." instance=ExtResource("7_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.787696, 0.05000019, 7.9608727)
+
+[node name="Pedistal4" parent="." instance=ExtResource("7_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.901355, 0.05000019, -8.039127)
+
+[node name="Pedistal5" parent="." instance=ExtResource("7_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.901355, 0.05000019, -0.039127827)
+
+[node name="Pedistal6" parent="." instance=ExtResource("7_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.901355, 0.05000019, 7.9608727)
+
+[node name="StatueActivator" parent="." instance=ExtResource("8_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5608493, 0.2999997, -12.952724)
+
+[node name="StatueActivator2" parent="." instance=ExtResource("8_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.39013776, 0.29999995, -12.173775)
+metadata/statue_dimensions = Vector3(10, 10, 10)
+
+[node name="StatueActivator3" parent="." instance=ExtResource("8_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8736623, 0.29999983, -12.413371)
+metadata/statue_dimensions = Vector3(3, 5, 3)
+
+[node name="StatueActivator4" parent="." instance=ExtResource("8_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.0519466, 0.29999995, -11.485676)
+metadata/statue_dimensions = Vector3(6, 3, 6)
+
+[node name="StatueActivator5" parent="." instance=ExtResource("8_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.17257263, 0.29999995, -11.081708)
+metadata/statue_dimensions = Vector3(3, 3, 3)
+
+[node name="StatueActivator6" parent="." instance=ExtResource("8_gee14")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.93310815, 0.29999995, -11.115446)
+metadata/statue_dimensions = Vector3(2, 2, 2)

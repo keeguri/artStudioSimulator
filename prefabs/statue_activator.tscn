@@ -1,0 +1,42 @@
+[gd_scene load_steps=5 format=3 uid="uid://dnqqpaog1fkp1"]
+
+[ext_resource type="Script" uid="uid://dk8jt6mb472sk" path="res://scripts/statue_activator.gd" id="1_y6bcn"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_807hc"]
+albedo_color = Color(0.029506553, 0.029506562, 0.029506536, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_y6bcn"]
+size = Vector3(0.5, 0.5, 0.5)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ph858"]
+size = Vector3(0.6, 0.6, 0.6)
+
+[node name="StatueActivator" type="RigidBody3D" node_paths=PackedStringArray("labels")]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_y6bcn")
+labels = [NodePath("Label3D"), NodePath("Label3D2"), NodePath("Label3D3"), NodePath("Label3D4")]
+metadata/statue_dimensions = Vector3(5, 5, 5)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+material_override = SubResource("StandardMaterial3D_807hc")
+mesh = SubResource("BoxMesh_y6bcn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_ph858")
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.25066113)
+text = "5x5x5"
+
+[node name="Label3D2" type="Label3D" parent="."]
+transform = Transform3D(-1, 0, 8.742278e-08, 0, 1, 0, -8.742278e-08, 0, -1, 0, 0, -0.25277895)
+text = "5x5x5"
+
+[node name="Label3D3" type="Label3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0.25172004, 0, -0.0010589174)
+text = "5x5x5"
+
+[node name="Label3D4" type="Label3D" parent="."]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, -0.25172004, 0, -0.0010588953)
+text = "5x5x5"

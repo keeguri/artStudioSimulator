@@ -4,7 +4,7 @@
 [ext_resource type="Material" uid="uid://bo6kknnyhripx" path="res://materials/voxel_material.tres" id="2_fll3l"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_e3afc"]
-size = Vector3(1, 2, 1)
+size = Vector3(1, 8.353027, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0kqf"]
 resource_name = "Material"
@@ -45,7 +45,7 @@ blend_shape_mode = 0
 shadow_mesh = SubResource("ArrayMesh_2oker")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_53lsb"]
-size = Vector3(1.9572754, 4.069092, 2)
+size = Vector3(1.9572754, 6.4622803, 2)
 
 [node name="Pedistal" type="StaticBody3D" node_paths=PackedStringArray("boxArea", "voxelHolder", "editModeCamera", "cameraHolder", "cameraRotator")]
 collision_layer = 8
@@ -66,7 +66,7 @@ input_ray_pickable = false
 monitorable = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="BoxDetection"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7988281, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.9753418, 0)
 shape = SubResource("BoxShape3D_e3afc")
 
 [node name="Pedistal" type="MeshInstance3D" parent="."]
@@ -74,7 +74,7 @@ mesh = SubResource("ArrayMesh_s8355")
 skeleton = NodePath("")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.9627686, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.1593628, 0)
 shape = SubResource("BoxShape3D_53lsb")
 
 [node name="VoxelHolder" type="Node3D" parent="."]
