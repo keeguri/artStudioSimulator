@@ -21,9 +21,13 @@ var time = 0
 @export var camera:Camera3D
 @export var interact_ray :RayCast3D
 @export var edit_ray :RayCast3D
+@export var laptop_ray : RayCast3D
 @export var drag_target :Marker3D
 @export var playermodel: Skeleton3D
 @export var pm_player: AnimationPlayer
+var pause_menu:Control
+
+var can_pause:bool = true
 
 var accept_input:bool = true
 
@@ -66,6 +70,10 @@ func _handle_actions() -> void:
 		var collider = edit_ray.get_collider()
 		if collider.collision_layer == 8:
 			collider.enter_edit_mode(self)
+	if Input.is_action_just_pressed("interact") and laptop_ray.is_colliding() and holding_object == null and accept_input:
+		var collider = laptop_ray.get_collider()
+		if collider.collision_layer == 128:
+			collider.open_gui()
 
 @rpc("any_peer", "call_local")
 func _handle_object_drag(object_path:NodePath, markerPosition:Vector3) -> void:
@@ -114,6 +122,7 @@ func _enter_tree() -> void:
 		get_node("Username").hide()
 
 func _ready() -> void:
+	pause_menu = get_tree().current_scene.get_node("UI/Control/Pause")
 	if is_multiplayer_authority():
 		camera.current = true
 		head_rest_position = head.position
@@ -136,8 +145,16 @@ func _physics_process(delta: float) -> void:
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 	
-	if Input.is_action_just_pressed("exit"):
-		Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+	if Input.is_action_just_pressed("exit") and can_pause:
+		if !pause_menu.visible:
+			Input.mouse_mode = Input.MOUSE_MODE_VISIBLE
+			pause_menu.show()
+			accept_input = false
+		else:
+			Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
+			pause_menu.hide()
+			accept_input = true
+
 	
 	var input_dir := Input.get_vector("a", "d", "w", "s")
 	var direction := (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()

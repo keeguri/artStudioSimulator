@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnsyurxtbfm8j"]
+
+[ext_resource type="Script" uid="uid://ch413u2hhof36" path="res://statue_data/statue_maker.gd" id="1_3actb"]
+
+[node name="StatueMaker" type="Node3D"]
+script = ExtResource("1_3actb")
+
+[node name="Voxel" type="StaticBody3D" parent="."]
+
+[node name="Voxel2" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.2)
+
+[node name="Voxel3" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -0.4)

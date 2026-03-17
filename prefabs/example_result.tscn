@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cgtn01g85ka8t"]
+
+[node name="ExampleResult" type="HBoxContainer"]
+theme_override_constants/separation = 100
+alignment = 1
+
+[node name="StatueName" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Моаи"
+
+[node name="PlayerName" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "Бебе"
+
+[node name="Accuracy" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "61%"
+
+[node name="Points" type="Label" parent="."]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+text = "92220"

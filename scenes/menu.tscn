@@ -571,7 +571,7 @@ grow_vertical = 2
 
 [node name="Username" type="LineEdit" parent="UI/MainMenu/Main/VBoxContainer"]
 layout_mode = 2
-placeholder_text = "Username"
+placeholder_text = "USERNAME"
 alignment = 1
 
 [node name="Playbuttons" type="HBoxContainer" parent="UI/MainMenu/Main/VBoxContainer"]
@@ -581,27 +581,27 @@ alignment = 1
 [node name="Host" type="Button" parent="UI/MainMenu/Main/VBoxContainer/Playbuttons"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Host"
+text = "HOST"
 
 [node name="Play" type="Button" parent="UI/MainMenu/Main/VBoxContainer/Playbuttons"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Join"
+text = "JOIN"
 
 [node name="Settings" type="Button" parent="UI/MainMenu/Main/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Settings"
+text = "SETTINGS"
 
 [node name="Customize" type="Button" parent="UI/MainMenu/Main/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Customize"
+text = "CUSTOMIZE"
 
 [node name="Quit" type="Button" parent="UI/MainMenu/Main/VBoxContainer"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
-text = "Quit"
+text = "QUIT"
 
 [node name="Logo" type="TextureRect" parent="UI/MainMenu/Main"]
 layout_mode = 1
@@ -642,7 +642,7 @@ offset_bottom = -227.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-text = "Customize"
+text = "CUSTOMIZE"
 
 [node name="BodyTitle" type="Label" parent="UI/MainMenu/Customize"]
 layout_mode = 1
@@ -655,7 +655,7 @@ offset_right = 280.0
 offset_bottom = -149.0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-text = "Body Color"
+text = "BODY_COLOR"
 
 [node name="BodyPicker" type="ColorPicker" parent="UI/MainMenu/Customize"]
 layout_mode = 1
@@ -688,7 +688,7 @@ offset_bottom = -151.0
 grow_horizontal = 0
 grow_vertical = 2
 theme_override_font_sizes/font_size = 40
-text = "Beret Color"
+text = "BERET_COLOR"
 
 [node name="BeretPicker" type="ColorPicker" parent="UI/MainMenu/Customize"]
 layout_mode = 1
@@ -724,7 +724,7 @@ offset_bottom = -63.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 30
-text = "Back"
+text = "BACK"
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
 material_override = ExtResource("3_con2f")

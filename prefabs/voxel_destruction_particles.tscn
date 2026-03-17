@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://25whkck7ilsq"]
+
+[ext_resource type="Material" uid="uid://bo6kknnyhripx" path="res://materials/voxel_material.tres" id="1_c6n3e"]
+[ext_resource type="Script" uid="uid://dlm0qc5agj4qk" path="res://scripts/destroy_after_time_component.gd" id="3_px17v"]
+
+[sub_resource type="Curve" id="Curve_j3pnf"]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.43548387, 0), -6.617979, -6.617979, 0, 0]
+point_count = 2
+
+[sub_resource type="CurveTexture" id="CurveTexture_px17v"]
+curve = SubResource("Curve_j3pnf")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_va26f"]
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_min = 2.0
+initial_velocity_max = 2.0
+gravity = Vector3(0, 0, 0)
+damping_min = 3.0000002
+damping_max = 5.0
+scale_min = 0.5
+scale_max = 0.5
+scale_curve = SubResource("CurveTexture_px17v")
+
+[sub_resource type="SphereMesh" id="SphereMesh_68v8p"]
+
+[node name="VoxelDestructionParticles" type="GPUParticles3D"]
+material_override = ExtResource("1_c6n3e")
+lifetime = 0.5
+explosiveness = 1.0
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_va26f")
+draw_pass_1 = SubResource("SphereMesh_68v8p")
+
+[node name="DestroyAfterTimeComponent" type="Node" parent="." node_paths=PackedStringArray("to_delete")]
+script = ExtResource("3_px17v")
+to_delete = NodePath("..")

@@ -1,0 +1,1980 @@
+[gd_scene load_steps=3 format=3 uid="uid://bmtwskxlyt2or"]
+
+[ext_resource type="Material" uid="uid://bo6kknnyhripx" path="res://materials/voxel_material.tres" id="1_mhdwh"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_u7kg4"]
+size = Vector3(0.2, 0.2, 0.2)
+
+[node name="CatStatue" type="Node3D"]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 0, 0, 0)
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh9" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh19" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, -0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh20" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, -0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh21" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, -0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh22" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, -0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh23" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, -0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh24" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh10" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh11" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh12" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh13" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh14" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh15" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh16" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh17" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh18" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh3" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh4" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh5" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh6" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh7" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh8" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh25" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh26" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh27" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh28" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh29" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh30" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh31" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh32" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh33" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh34" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh35" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh189" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh198" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh206" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh215" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh223" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh240" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.2, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh249" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh256" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh257" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh232" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh36" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh37" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh38" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh39" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh40" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh41" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh42" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh43" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh44" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh45" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh46" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh47" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh48" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh49" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh50" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh51" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh52" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh53" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh54" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh55" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh56" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh57" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh58" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh59" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh60" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh61" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh62" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh63" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh64" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh65" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh66" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh67" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh68" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh72" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh73" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh74" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh75" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh76" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh77" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh78" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh69" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh79" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh70" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 0.4, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh80" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 0.6, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh71" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh81" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh82" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh83" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh84" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh85" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh86" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh87" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh88" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh89" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh90" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh91" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh92" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh93" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh94" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh95" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh96" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 0.8, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh97" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh98" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh99" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh100" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh101" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh102" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh103" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh104" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh105" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh106" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh107" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh108" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh109" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh110" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh111" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh112" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh113" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 1, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh114" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh115" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh116" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh117" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh118" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh119" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh120" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh121" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh122" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh123" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh124" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh125" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh126" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh127" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh128" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh129" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh130" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 1.2, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh131" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh132" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh133" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh134" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh135" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh136" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh137" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh138" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh139" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh140" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh141" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh142" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh143" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh144" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh145" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh146" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh147" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 1.4000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh148" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh149" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh150" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh151" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh152" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh153" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh154" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh155" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh156" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh157" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh158" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh159" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh160" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh161" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh162" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh163" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh164" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 1.6000001, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh165" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh166" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh167" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh168" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh169" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh170" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh171" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh172" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh173" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh174" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh175" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh176" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh177" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh178" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh179" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh180" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh181" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.8000001, 1.8000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh182" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh183" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh184" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh185" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh186" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh187" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh188" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh190" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh191" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh192" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh193" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh194" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh195" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh196" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh197" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 2.0000002, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh199" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh200" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh201" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh202" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh203" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh204" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh205" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh207" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh208" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh209" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh210" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh211" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh212" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh213" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh214" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 2.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh216" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh217" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh218" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh219" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh220" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh221" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh222" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh224" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh225" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh226" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh227" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh228" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh229" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh230" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh231" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 2.4000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh233" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh234" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh235" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh236" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh237" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh238" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh239" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh241" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh242" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh243" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh244" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh245" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh246" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh247" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh248" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 2.6000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh251" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh252" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh253" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 2.8000004, 0)
+visible = false
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh254" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh255" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh258" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh260" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh261" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh262" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 2.8000004, 0)
+visible = false
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh263" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh264" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 2.8000004, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh267" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh268" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh269" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 3.0000005, 0)
+visible = false
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh270" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh271" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh272" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh276" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh277" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh278" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.0000005, 0)
+visible = false
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh279" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh280" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh281" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 3.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh284" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh285" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh286" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh287" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh288" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh289" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh292" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh293" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh294" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh295" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh296" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh297" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh298" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 3.2000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh301" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh302" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh303" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh304" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh305" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh306" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh309" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh310" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh311" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh312" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh313" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh314" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh315" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 3.4000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh318" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh319" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh320" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh321" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh322" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.8, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh326" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh327" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh328" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh329" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh330" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh331" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.2, 3.6000006, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh335" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh336" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh337" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh338" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh343" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.2, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh344" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh345" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh346" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh347" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 3.8000007, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh353" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.2, 4.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh354" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 4.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh355" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 4.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh362" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.6, 4.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh363" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 4.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh364" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 4.0000005, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh371" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 4.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")
+
+[node name="Mesh380" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.8, 4.2000003, 0)
+material_override = ExtResource("1_mhdwh")
+mesh = SubResource("BoxMesh_u7kg4")
+skeleton = NodePath("")

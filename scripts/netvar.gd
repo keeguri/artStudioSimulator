@@ -12,6 +12,21 @@ var username :String = ""
 var body_color :Color = Color(1,1,1)
 var accessory_color :Color = Color(1,1,1)
 
+func upnp_setup():
+	var upnp = UPNP.new()
+	
+	var result = upnp.discover()
+	assert(result == UPNP.UPNP_RESULT_SUCCESS, \
+	"UPNP DISCOVER FAILED: ERROR %s" % result)
+	assert(upnp.get_gateway() and upnp.get_gateway().is_valid_gateway(), \
+	"UPNP INVALID GATEWAY")
+
+	var mapres = upnp.add_port_mapping(SERVER_PORT)
+	assert(mapres == UPNP.UPNP_RESULT_SUCCESS, \
+	"UPNP PORT MAPPING FAILED: ERROR %s" % mapres)
+	
+	print("SUCCESS! ADDRESS: %s" % upnp.query_external_address())
+
 func _ready():
 	var args = OS.get_cmdline_user_args()
 	print(args)
@@ -30,6 +45,7 @@ func create_server():
 	peer.create_server(SERVER_PORT)
 	multiplayer.multiplayer_peer = peer
 	print('Created Server')
+	upnp_setup()
 
 func create_client(ip:String = 'localhost', host_port : int = SERVER_PORT):
 	is_host = false

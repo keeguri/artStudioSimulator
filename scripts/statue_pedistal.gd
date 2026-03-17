@@ -1,5 +1,9 @@
 extends StaticBody3D
 
+const PARTICLE_SCENE = "uid://25whkck7ilsq" # res://prefabs/voxel_destruction_particles.tscn
+
+var claimedName:String = ""
+
 @export var voxel_size = .2
 @export var speed = .5
 
@@ -9,18 +13,31 @@ extends StaticBody3D
 @export var cameraHolder:Node3D
 @export var cameraRotator:Node3D
 @export var voxelMaterial:Material
+@export var shakeComponent:ShakerComponent3D
+@export var clamedPersonName:Label3D
 var is_searching:bool = true
 var is_editing:bool = false
 
 var current_player:CharacterBody3D
 
 @rpc("any_peer", "call_local")
-func destroy_voxel(voxel_path:NodePath):
+func destroy_voxel(voxel_path:NodePath) -> void:
 	var voxel :StaticBody3D = get_tree().current_scene.get_node(voxel_path)
+	var new_particle : GPUParticles3D = preload(PARTICLE_SCENE).instantiate()
+	add_child(new_particle)
+	new_particle.global_position = voxel.global_position
+	shakeComponent.play_shake()
 	voxel.queue_free()
 
+
 func enter_edit_mode(player) -> void:
+	if player.get_node("Username").text != claimedName:
+		if claimedName == "":
+			_claim_pedistal.rpc(player.name)
+		return
+	player.can_pause = false
 	player.accept_input = false
+	player.playermodel.hide()
 	player.camera.current = false
 	editModeCamera.current = true
 	current_player = player
@@ -31,9 +48,11 @@ func exit_edit_mode() -> void:
 	var player = current_player
 	player.accept_input = true
 	player.camera.current = true
+	player.playermodel.show()
 	editModeCamera.current = false
 	is_editing = false
 	player.toggle_cursor(true)
+	player.can_pause = true
 
 func _handle_edit_mode_actions(delta) -> void:
 	if Input.is_action_pressed("a"):
@@ -62,13 +81,46 @@ func _handle_voxels() -> void:
 
 		var collision = space_state.intersect_ray(query)
 
+		if collision and collision.collider and voxelHolder.is_ancestor_of(collision.collider):
+			DebugDraw3D.draw_box(collision.collider.global_position, Quaternion.IDENTITY, Vector3.ONE*voxel_size, Color.WHITE, true)
+
 		if collision and collision.collider and Input.is_action_just_pressed("pickup"):
+			if !voxelHolder.is_ancestor_of(collision.collider): return
 			destroy_voxel.rpc(get_tree().current_scene.get_path_to(collision.collider))
-    
+
+@rpc("any_peer", "call_local")
+func _claim_pedistal(playerPath):
+	var player = get_tree().current_scene.get_node("Spawnpath").get_node(NodePath(playerPath))
+	var playerName :String = player.get_node("Username").text
+	var groupers = get_tree().get_nodes_in_group("pedistals")
+	for node in groupers:
+		if node.claimedName == playerName:
+			return
+	claimedName = playerName
+	clamedPersonName.text = claimedName
+	_create_statue(Vector3(5,10,5), NodePath())
+
+func _calculate_accuracy_score(comparison:String):
+	var accuracy:float = 0
+	var score:float = 0
+	var correct = 0
+	var bebe:float = len(comparison)/9.0
+	for voxel in voxelHolder.get_children():
+		if voxel.name in comparison:
+			correct+=1
+			score+=10
+		else:
+			correct-=1
+			score=max(score-10, 0)
+	accuracy = correct/bebe
+	return [accuracy, score]
+
+
 @rpc("authority", "call_local")
 func _create_statue(dimensions:Vector3, activator:NodePath) -> void:
-	get_tree().current_scene.get_node(activator).queue_free()
-	#create voxels
+	if activator != NodePath():
+		get_tree().current_scene.get_node(activator).queue_free()
+	
 	var sum :Vector3 = Vector3.ZERO
 	var vec_count :int = 0
 
