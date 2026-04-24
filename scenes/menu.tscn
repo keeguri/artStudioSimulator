@@ -589,6 +589,7 @@ theme_override_font_sizes/font_size = 30
 text = "JOIN"
 
 [node name="Settings" type="Button" parent="UI/MainMenu/Main/VBoxContainer"]
+visible = false
 layout_mode = 2
 theme_override_font_sizes/font_size = 30
 text = "SETTINGS"
@@ -618,6 +619,20 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("3_4ytvr")
 expand_mode = 1
+
+[node name="IPEdit" type="LineEdit" parent="UI/MainMenu/Main"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -93.640625
+offset_top = -31.0
+offset_right = 93.640625
+grow_horizontal = 2
+grow_vertical = 0
+placeholder_text = "IP"
 
 [node name="Customize" type="Control" parent="UI/MainMenu"]
 visible = false
@@ -961,6 +976,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.240663, 4.18985)
 [connection signal="pressed" from="UI/MainMenu/Main/VBoxContainer/Playbuttons/Host" to="UI" method="_on_host_pressed"]
 [connection signal="pressed" from="UI/MainMenu/Main/VBoxContainer/Playbuttons/Play" to="UI" method="_on_play_pressed"]
 [connection signal="pressed" from="UI/MainMenu/Main/VBoxContainer/Customize" to="UI" method="_on_customize_pressed"]
+[connection signal="pressed" from="UI/MainMenu/Main/VBoxContainer/Quit" to="UI" method="_on_quit_pressed"]
+[connection signal="text_changed" from="UI/MainMenu/Main/IPEdit" to="UI" method="_on_ip_edit_text_changed"]
 [connection signal="color_changed" from="UI/MainMenu/Customize/BodyPicker" to="UI" method="_on_body_picker_color_changed"]
 [connection signal="color_changed" from="UI/MainMenu/Customize/BeretPicker" to="UI" method="_on_beret_picker_color_changed"]
 [connection signal="pressed" from="UI/MainMenu/Customize/Back" to="UI" method="_on_customize_back_pressed"]

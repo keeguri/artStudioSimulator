@@ -22,7 +22,7 @@ var new_body_material :StandardMaterial3D
 var new_beret_material :StandardMaterial3D
 var new_shader_material :ShaderMaterial
 
-
+var ip = ""
 
 func _ready():
 	prefered_position = defaultPosition.global_position
@@ -55,7 +55,7 @@ func _ready():
 
 func _on_play_pressed() -> void:
 	if !is_username_valid(Netvar.username): return
-	Netvar.create_client()
+	Netvar.create_client(ip)
 	Netvar.load_game_scene()
 
 
@@ -98,3 +98,11 @@ func _on_beret_picker_color_changed(color: Color) -> void:
 
 func _on_line_edit_text_changed(new_text: String) -> void:
 	Netvar.username = new_text
+
+
+func _on_ip_edit_text_changed(new_text: String) -> void:
+	ip = new_text
+
+
+func _on_quit_pressed() -> void:
+	get_tree().quit()
